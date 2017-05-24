@@ -1,0 +1,22 @@
+First start to initialise ROS in one console:
+
+ - roscore &
+
+In another console source the workspace:
+
+ - source ./devel/setup.bash
+
+In the same console start the main Publisher :
+
+ - cd catkin_ws
+
+ - rosrun Project_SOFT Main_Pub
+ - python Server.py
+
+In another console again start the Arduino to RPi conncetion script
+
+ - cd catkin_ws/src/Project_SOFT/Script
+
+ - rosrun Project_SOFT Arduino_to_RPi.py
+
+Finally verify and flash the arduino 
